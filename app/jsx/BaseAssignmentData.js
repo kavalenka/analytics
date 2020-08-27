@@ -45,7 +45,7 @@ export default class BaseAssignmentData extends BaseData {
         if (original.submission.score != null) {
           assignment.studentScore = original.submission.score
         }
-        assignment.muted = assignment.studentScore != null && original.submission.posted_at == null
+        assignment.muted = original.muted
       } else {
         assignment.muted = original.muted
       }
